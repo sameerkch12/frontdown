@@ -10,7 +10,7 @@ function MediaDownloader() {
     const handleDownload = async () => {
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:5000/download', { url });
+            const response = await axios.post('https://sd-01jq.onrender.com/download', { url });
             setMediaData(response.data);
             setError(null);
         } catch (err) {
